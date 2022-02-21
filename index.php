@@ -349,6 +349,6 @@ foreach ($cars as $car) {
     $totalCarsWeight += $car->getWeight();
     if (!$track->addCar($car)) {
         $overweight = $totalCarsWeight - $track->getCapacity();
-        echo 'Автомобіль з номерним знаком ' . $car->getLicensePlate() . ' неможливо завантажити. Зайва вага ' . $overweight . 'кг';
+        echo 'Автомобіль з номерним знаком ' . $car->getLicensePlate() . ' неможливо завантажити. Зайва вага ' . $overweight . ' кг';
     }
 }
